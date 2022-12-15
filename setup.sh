@@ -3,10 +3,10 @@
 # ===============================================================================================
 #
 #`  CAPITAN:        Andrés Bretón, dev@andresbreton.me
-#`  REPO:           https://github.com/bretonics/Setup
+#`  REPO:           https://github.com/helmsb/Mac-Setup
 #`  LICENSE:        MIT (https://bretonics.mit-license.org/)
 #`  FILE:           setup.sh
-#`  USAGE:          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bretonics/Setup/HEAD/setup)"
+#`  USAGE:          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/helmsb/Mac-Setup/HEAD/setup)"
 #
 # ===============================================================================================
 #   Running the setup without any options below will run a MAIN setup by default. Use the following to accommodate your needs.
@@ -25,17 +25,17 @@
 #       -h                      Prints this usage message
 #
 #   Most likely you will want to pass your own Brewfile as followed:
-#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bretonics/Setup/HEAD/setup.sh)" "" ~/absolute/path/to/Brewfile
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/helmsb/Mac-Setup/HEAD/setup.sh)" "" ~/absolute/path/to/Brewfile
 #
 #   You can also pass any of the available options:
-#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bretonics/Setup/HEAD/setup.sh)" "" -s
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/helmsb/Mac-Setup/HEAD/setup.sh)" "" -s
 
-#   Alternatively, you can download also download the repo (https://github.com/bretonics/Setup/archive/main.zip) and
-#   customize the setup to your specifications. See https://github.com/bretonics/Setup#customizable-setup
+#   Alternatively, you can download also download the repo (https://github.com/helmsb/Mac-Setup/archive/main.zip) and
+#   customize the setup to your specifications. See https://github.com/helmsb/Mac-Setup#customizable-setup
 # ===============================================================================================
 
 # Download latest release and start setup process
-URL=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/bretonics/Setup/releases/latest \
+URL=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/helmsb/Mac-Setup/releases/latest \
     | grep "zipball_url" \
     | cut -d '"' -f 4)
 

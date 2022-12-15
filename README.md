@@ -1,19 +1,19 @@
 # Setup
 
 [![GitHub Version](https://badge.fury.io/gh/bretonics%2FSetup.svg)](http://badge.fury.io/gh/bretonics%2Fsetup)
-![Release Date](https://img.shields.io/github/release-date/bretonics/Setup?color=success)
+![Release Date](https://img.shields.io/github/release-date/helmsb/Mac-Setup?color=success)
 [![MIT License](https://img.shields.io/badge/License-MIT-red.svg)](https://bretonics.mit-license.org/)
-![Used By](https://img.shields.io/sourcegraph/rrc/github.com/bretonics/Setup?color=blue)
-[![](https://img.shields.io/github/license/bretonics/Setup?color=blue)](https://github.com/bretonics/Setup/blob/main/LICENSE.md)
+![Used By](https://img.shields.io/sourcegraph/rrc/github.com/helmsb/Mac-Setup?color=blue)
+[![](https://img.shields.io/github/license/helmsb/Mac-Setup?color=blue)](https://github.com/helmsb/Mac-Setup/blob/main/LICENSE.md)
 
-![Commits Since](https://img.shields.io/github/commits-since/bretonics/Setup/latest)
-![GitHub last commit](https://img.shields.io/github/last-commit/bretonics/Setup?color=lightgrey)
-![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/bretonics/Setup?color=yellow)
-![GitHub repo Size](https://img.shields.io/github/repo-size/bretonics/Setup?color=orange)
-![Lines of Code](https://img.shields.io/tokei/lines/github/bretonics/Setup)
+![Commits Since](https://img.shields.io/github/commits-since/helmsb/Mac-Setup/latest)
+![GitHub last commit](https://img.shields.io/github/last-commit/helmsb/Mac-Setup?color=lightgrey)
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/helmsb/Mac-Setup?color=yellow)
+![GitHub repo Size](https://img.shields.io/github/repo-size/helmsb/Mac-Setup?color=orange)
+![Lines of Code](https://img.shields.io/tokei/lines/github/helmsb/Mac-Setup)
 
-[![GitHub Issues](https://img.shields.io/github/issues/bretonics/setup)](https://GitHub.com/bretonics/setup/issues/)
-[![GitHub Pull-Requests](https://img.shields.io/github/issues-pr/bretonics/Setup.svg)](https://GitHub.com/bretonics/setup/pull/)
+[![GitHub Issues](https://img.shields.io/github/issues/helmsb/Mac-Setup)](https://GitHub.com/helmsb/Mac-Setup/issues/)
+[![GitHub Pull-Requests](https://img.shields.io/github/issues-pr/helmsb/Mac-Setup.svg)](https://GitHub.com/helmsb/Mac-Setup/pull/)
 
 [![GitHub](https://img.shields.io/github/followers/bretonics?label=Follow%20%40bretonics&style=social)](https://github.com/bretonics)
 [![Twitter](https://img.shields.io/twitter/follow/bretonics?style=social)](https://twitter.com/bretonics)
@@ -39,9 +39,9 @@ Get most of the tedious configurations, application installs, and other settings
 
 - Installs [Homebrew](https://brew.sh/)
 - Installs Xcode Developer Tools
-- Installs [necessary applications and tools](https://github.com/bretonics/Setup/blob/main/src/Brewfile)
+- Installs [necessary applications and tools](https://github.com/helmsb/Mac-Setup/blob/main/src/Brewfile)
 - Sets up environment (executables/tools (git, npm, etc), shells (defaults, prompts, etc), CLIs, and more)
-- Additional [environment configurations](https://github.com/bretonics/Setup/blob/main/bin/settings_defaults.sh)
+- Additional [environment configurations](https://github.com/helmsb/Mac-Setup/blob/main/bin/settings_defaults.sh)
 - Updates macOS
   
 Start with a [Customizable Setup](#customizable-setup) run.
@@ -49,10 +49,10 @@ Start with a [Customizable Setup](#customizable-setup) run.
 ---
 
 ``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bretonics/Setup/HEAD/setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/helmsb/Mac-Setup/HEAD/setup.sh)"
 ```
 
-> Cancel the auto run with `Ctrl-C` if you want to modify [apps.txt](https://github.com/bretonics/Setup/blob/main/src/apps.txt), [formulae.txt](https://github.com/bretonics/Setup/blob/main/src/formulae.txt), [casks.txt](https://github.com/bretonics/Setup/blob/main/src/casks.txt), and/or [Brewfile](https://github.com/bretonics/Setup/blob/main/src/Brewfile).
+> Cancel the auto run with `Ctrl-C` if you want to modify [apps.txt](https://github.com/helmsb/Mac-Setup/blob/main/src/apps.txt), [formulae.txt](https://github.com/helmsb/Mac-Setup/blob/main/src/formulae.txt), [casks.txt](https://github.com/helmsb/Mac-Setup/blob/main/src/casks.txt), and/or [Brewfile](https://github.com/helmsb/Mac-Setup/blob/main/src/Brewfile).
 >
 > See [Customizable Setup](#customizable-setup) for a better way to utilize a custom Setup.
 
@@ -62,13 +62,13 @@ Start with a [Customizable Setup](#customizable-setup) run.
 
 This install includes the entire app, formulae, and cask collection, including those in the [essentials](#essentials) install type and all [modes](#modes). This is more for something like a Mac mini.
 
-See the default [Brewfile](https://github.com/bretonics/Setup/tree/main/src/Brewfile).
+See the default [Brewfile](https://github.com/helmsb/Mac-Setup/tree/main/src/Brewfile).
 
 ### Essentials
 
 This install includes a smaller subset of what I deem essential, must haves. It's intended more for a Macbook Pro where you don't need everything under the sun.
 
-See the default [Brewfile](https://github.com/bretonics/Setup/tree/main/src/essentials/Brewfile).
+See the default [Brewfile](https://github.com/helmsb/Mac-Setup/tree/main/src/essentials/Brewfile).
 
 ### Secondary
 
@@ -76,7 +76,7 @@ Secondary setup modifies personalized Mac settings, and is run after the initial
 
 ## Modes
 
-Directories in [./src/mode](https://github.com/bretonics/Setup/tree/main/src) separate other installation modes that can be run in addition to the 'main' or 'essentials' install chosen.
+Directories in [./src/mode](https://github.com/helmsb/Mac-Setup/tree/main/src) separate other installation modes that can be run in addition to the 'main' or 'essentials' install chosen.
 
 Each directory keeps track of individual programs (Apps, Formulae, and Casks) to install for the specific mode, via their own `Brewfile`, and includes an `install.sh` for all logic pertaining to the mode.
 
@@ -120,20 +120,20 @@ Arguments:
 I suggest using your own Brewfile. If you don't have one, see [Useful Commands](#useful-commands) to create one before running Setup, and pass this to the program as followed:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bretonics/Setup/HEAD/setup.sh)" "" ~/absolute/path/to/Brewfile
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/helmsb/Mac-Setup/HEAD/setup.sh)" "" ~/absolute/path/to/Brewfile
 ```
 
 You can also pass any of the available [options](#options):
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bretonics/Setup/HEAD/setup.sh)" "" -E
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/helmsb/Mac-Setup/HEAD/setup.sh)" "" -E
 ```
 
 ### Manual
 
 You probably want to do this --unless you really like everything configured as I do (we both know you don't)--and don't have a Brewfile to run a [customized setup](#customizable-setup).
 
-[Download the repo](https://github.com/bretonics/Setup/archive/main.zip) or [fork](https://github.com/bretonics/Setup) it to do a custom install and modify the following:
+[Download the repo](https://github.com/helmsb/Mac-Setup/archive/main.zip) or [fork](https://github.com/helmsb/Mac-Setup) it to do a custom install and modify the following:
 
 **Brewfile**
 
@@ -141,7 +141,7 @@ Modify the `./src/Brewfile` and run `bash install`, or pass your own: `bash inst
 
 **Personalizations**
 
-1. Modify files containing list of apps and their respective Mac App Store product identifiers, formulae, and/or casks that you want installed in the [src](https://github.com/bretonics/Setup/tree/main/src) directory.
+1. Modify files containing list of apps and their respective Mac App Store product identifiers, formulae, and/or casks that you want installed in the [src](https://github.com/helmsb/Mac-Setup/tree/main/src) directory.
 
 2. Run `bash install.sh -E`
 
